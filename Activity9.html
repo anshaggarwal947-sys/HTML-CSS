@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" >
+    <title>CSS Forms</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url("Google.webp"); 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat; 
+            height: 100vh; 
+            display: flex;
+            justify-content: center;  
+            align-items: center;  
+        }
+        label{
+            display: block; 
+            margin-bottom: 10px; 
+        }
+        div{
+            border-radius: 10px; 
+            padding: 50px; 
+            width: 400px;
+            background-color: burlywood;
+        } 
+        input[type="text"], input[type="email"], input[type="password"], select, textarea{
+            width: 100%;
+            padding: 10px; 
+            border: none;
+            border-radius: 5px; 
+        }
+        input[type="submit"], input[type="reset"]{
+            background-color: rgb(0, 98, 255); 
+            color: aliceblue;
+            padding: 10px 20px; 
+            border-radius: 20px;
+            border: none;
+        }
+        input:focus, textarea:focus, select:focus{
+            background-color: rgb(215, 250, 230);
+        }
+        input[type="submit"]:hover, input[type="reset"]:hover{
+            background-color: brown; 
+            cursor: pointer; 
+        }
+    </style>
+</head>
+<body>
+     <div>
+    <h2> Registration form  </h2> 
+        <form action="a.html"> 
+            <label for="Name">Name:</label>
+            <input type="text" placeholder="Enter your Name "> <br> <br> 
+
+            <label for="email">Email:</label> 
+            <input type="email" placeholder="Your Email">  <br>  <br> 
+
+            <label for="password">Password</label>
+            <input type="password"> 
+
+            <label for="cities">Select City</label> 
+            <select name="cities">
+            <option value="Select">Select</option>
+            <option value="Mumbai">Mumbai</option> 
+            <option value="Noida">Noida</option> 
+            <option value="Delhi">Delhi</option> 
+            <option value="Banglore">Banglore</option>
+            </select> <br> <br> 
+
+            <label for="address">Address</label> 
+            <textarea name="" cols="30" rows="5"></textarea> <br> <br> 
+
+            <label for="Gender">Gender</label>
+            <select name="Gender"> 
+                <option value="Male">Male</option> 
+                <option value="Female">Female</option>                
+                <option value="Others">Others</option> 
+            </select> <br> <br> 
+
+            <label for="upload">Upload file</label>
+            <input type="file"> <br> <br> 
+            <input type="Submit" value="SUBMIT FORM"> <br> <br> 
+            <input type="reset" value="RESET">                   
+        </form>
+    </div>
+</body> 
+</html> 
